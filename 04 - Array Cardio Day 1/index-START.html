@@ -89,14 +89,14 @@
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
     const vehicles = data.reduce(function(obj,item) {
-      if(!obj[item]) {
-        obj[item] = 0
+      if(!obj[item]) { // if there is no object item
+        obj[item] = 0 // then set it to zero
       }
       obj[item]++;
       return obj;
     }, {});
     console.log(vehicles);
-    
+
   </script>
 </body>
 </html>
